@@ -79,3 +79,50 @@ Got:
    1 of   3 in __main__.encode
 ***Test Failed*** 1 failures.
 ```
+# Issue-2
+## $ python -m pytest morse.py
+```python
+collected 3 items                                                                                                                                                             
+
+main.py .FF                                                                                                                                                             [100%]
+
+================================================================================== FAILURES ===================================================================================
+_______________________________________________ test_decode[- . ... -   ..-. --- .-.   .-.. . - - . .-.   ---TEST FOR LETTER M] _______________________________________________
+
+test_input = '- . ... -   ..-. --- .-.   .-.. . - - . .-.   --', expected = 'TEST FOR LETTER M'
+
+    @pytest.mark.parametrize('test_input, expected', [
+        ('... --- ...', 'SOS'),
+        ('- . ... -   ..-. --- .-.   .-.. . - - . .-.   --', 'TEST FOR LETTER M'),
+        ('..-. ..- -. -. -.--   .-- --- .-. -..', 'FUNNY WORD')
+        ])
+    def test_decode(test_input, expected):
+>       assert decode(test_input) == expected
+E       AssertionError: assert 'TESTFORLETTERM' == 'TEST FOR LETTER M'
+E         - TEST FOR LETTER M
+E         ?     -   -      -
+E         + TESTFORLETTERM
+
+main.py:70: AssertionError
+________________________________________________________ test_decode[..-. ..- -. -. -.--   .-- --- .-. -..-FUNNY WORD] ________________________________________________________
+
+test_input = '..-. ..- -. -. -.--   .-- --- .-. -..', expected = 'FUNNY WORD'
+
+    @pytest.mark.parametrize('test_input, expected', [
+        ('... --- ...', 'SOS'),
+        ('- . ... -   ..-. --- .-.   .-.. . - - . .-.   --', 'TEST FOR LETTER M'),
+        ('..-. ..- -. -. -.--   .-- --- .-. -..', 'FUNNY WORD')
+        ])
+    def test_decode(test_input, expected):
+>       assert decode(test_input) == expected
+E       AssertionError: assert 'FUNNYWORD' == 'FUNNY WORD'
+E         - FUNNY WORD
+E         ?      -
+E         + FUNNYWORD
+
+main.py:70: AssertionError
+=========================================================================== short test summary info ===========================================================================
+FAILED main.py::test_decode[- . ... -   ..-. --- .-.   .-.. . - - . .-.   ---TEST FOR LETTER M] - AssertionError: assert 'TESTFORLETTERM' == 'TEST FOR LETTER M'
+FAILED main.py::test_decode[..-. ..- -. -. -.--   .-- --- .-. -..-FUNNY WORD] - AssertionError: assert 'FUNNYWORD' == 'FUNNY WORD'
+========================================================================= 2 failed, 1 passed in 0.50s =========================================================================
+```
