@@ -1,6 +1,7 @@
-<pre>
+
 # Issue-1:
 ## 1. $ python -m doctest -v -o NORMALIZE_WHITESPACE morse.py:
+<pre>
 Trying: </br>
     encode('SOS') </br>
 Expecting:</br>
@@ -26,7 +27,9 @@ ok</br>
 3 tests in 3 items.</br>
 3 passed and 0 failed. </br>
 Test passed. </br>
+</pre>
 ## 2. $ python -m doctest -v morse.py </br>
+<pre>
 Trying: </br>
     encode('SOS') </br>
 Expecting: </br>
