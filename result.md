@@ -64,7 +64,7 @@ ok
 2 passed and 1 failed. 
 ***Test Failed*** 1 failures. 
 ```
-## 3. Обычный запуск
+## 3. Запуск через pycharm
 ```python
 **********************************************************************
 File "/Users/daniilzakharov/Documents/Avito_Analitics/1.Python/10.Классы/Домашка/main.py", line 34, in __main__.encode
@@ -126,8 +126,8 @@ FAILED main.py::test_decode[- . ... -   ..-. --- .-.   .-.. . - - . .-.   ---TES
 FAILED main.py::test_decode[..-. ..- -. -. -.--   .-- --- .-. -..-FUNNY WORD] - AssertionError: assert 'FUNNYWORD' == 'FUNNY WORD'
 ========================================================================= 2 failed, 1 passed in 0.50s =========================================================================
 ```
-# Issue-3:
-## $ python -m unittest -v test_u_fit.py
+# Issue-3
+## 1. $ python -m unittest -v test_u_fit.py
 ```python
 test_empty (main.TestFitTransform) ... ok
 test_none (main.TestFitTransform) ... ok
@@ -139,3 +139,12 @@ Ran 3 tests in 0.001s
 OK
 
 ```
+## 2. Запуск через pycharm
+```python
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK
+```
+# Issue-4
