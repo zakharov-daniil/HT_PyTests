@@ -1,6 +1,6 @@
 
 # Issue-1:
-## 1. $ python -m doctest -v -o NORMALIZE_WHITESPACE morse.py:
+## 1. $ python -m doctest -v -o NORMALIZE_WHITESPACE morse.py
 ```python
 Trying: 
     encode('SOS') 
