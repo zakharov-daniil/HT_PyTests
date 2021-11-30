@@ -127,7 +127,7 @@ FAILED main.py::test_decode[..-. ..- -. -. -.--   .-- --- .-. -..-FUNNY WORD] - 
 ========================================================================= 2 failed, 1 passed in 0.50s =========================================================================
 ```
 # Issue-3:
-## python -m unittest -v test_u_fit.py
+## $ python -m unittest -v test_u_fit.py
 ```python
 test_empty (main.TestFitTransform) ... ok
 test_none (main.TestFitTransform) ... ok
