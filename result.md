@@ -126,3 +126,16 @@ FAILED main.py::test_decode[- . ... -   ..-. --- .-.   .-.. . - - . .-.   ---TES
 FAILED main.py::test_decode[..-. ..- -. -. -.--   .-- --- .-. -..-FUNNY WORD] - AssertionError: assert 'FUNNYWORD' == 'FUNNY WORD'
 ========================================================================= 2 failed, 1 passed in 0.50s =========================================================================
 ```
+# Issue-3:
+## python -m unittest -v test_u_fit.py
+```python
+test_empty (main.TestFitTransform) ... ok
+test_none (main.TestFitTransform) ... ok
+test_texts (main.TestFitTransform) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
+
+```
