@@ -8,7 +8,7 @@ $ python -m doctest -v morse.py
 
 ## Issue-2: Parametric Pytest
 1. Запуск </br>
-$ python -m pytest main.py
+$ python -m pytest morse.py
 
 ## Issue-3: Unittest
 
