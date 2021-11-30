@@ -1,3 +1,4 @@
+<pre>
 # Issue-1:
 ## 1. $ python -m doctest -v -o NORMALIZE_WHITESPACE morse.py:
 Trying: </br>
@@ -59,3 +60,4 @@ ok </br>
 3 tests in 3 items. </br>
 2 passed and 1 failed. </br>
 ***Test Failed*** 1 failures. </br>
+</pre>
