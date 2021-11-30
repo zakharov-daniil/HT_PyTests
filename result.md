@@ -64,3 +64,18 @@ ok
 2 passed and 1 failed. 
 ***Test Failed*** 1 failures. 
 ```
+## 3. Обычный запуск
+```python
+**********************************************************************
+File "/Users/daniilzakharov/Documents/Avito_Analitics/1.Python/10.Классы/Домашка/main.py", line 34, in __main__.encode
+Failed example:
+    encode('SOS')
+Expected:
+    '...  --- ...'
+Got:
+    '... --- ...'
+**********************************************************************
+1 items had failures:
+   1 of   3 in __main__.encode
+***Test Failed*** 1 failures.
+```
