@@ -33,7 +33,7 @@ $ python -m pytest -v test_py_fit.py
 ```
 ## Issue-5: WorldClock
 Файл **what_is_year_now.py**, html директория **htmlcov**</br>
-1. Запус с командной строки</br>
+1. Запуск с командной строки</br>
 ```python
 $ coverage run -m pytest -v what_is_year_now.py
 ```
