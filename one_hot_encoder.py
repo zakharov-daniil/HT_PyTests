@@ -35,14 +35,5 @@ if __name__ == '__main__':
         ('London', [1, 0, 0]),
     ]
     transformed_cities = fit_transform(cities)
-    pprint(transformed_cities)
     assert transformed_cities == exp_transformed_cities
-    colors = ['red', 'red', 'green']
-    transformed_colors = fit_transform(colors)
-    pprint(transformed_colors)
-    expected = [
-        [('Moscow', [0, 0, 1]), ('New York', [0, 1, 0]), ('Moscow', [0, 0, 1]), ('London', [1, 0, 0])],
-        [('hello', [0, 1]), ('world', [1, 0])],
-        [('red', [0, 1]), ('red', [0, 1]), ('green', [1, 0])]
-    ]
-    assert expected[2] == transformed_colors
+    
