@@ -148,3 +148,16 @@ Ran 3 tests in 0.000s
 OK
 ```
 # Issue-4
+## $ python -m pytest -v test_py_fit.py
+```python
+collected 6 items                                                                                                                                                             
+
+main.py::test_none PASSED                                                                                                                                               [ 16%]
+main.py::test_empty PASSED                                                                                                                                              [ 33%]
+main.py::test_fit_texts[text0-expected0] PASSED                                                                                                                         [ 50%]
+main.py::test_fit_texts[text1-expected1] PASSED                                                                                                                         [ 66%]
+main.py::test_fit_texts[text2-expected2] PASSED                                                                                                                         [ 83%]
+main.py::test_fit_texts[text3-expected3] PASSED                                                                                                                         [100%]
+
+============================================================================== 6 passed in 0.08s ==============================================================================
+```
