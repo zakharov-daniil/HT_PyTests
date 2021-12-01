@@ -20,6 +20,7 @@ $ python -m unittest -v test_u_fit.py
 
 ## Issue-4: Pytest
 Файлы one_hot_encoder.py с функцией fit_tramsform и test_py_fit.py с тестами </br>
-Запуск $ python -m pytest -v test_py_fit.py
+1. Запуск </br>
+$ python -m pytest -v test_py_fit.py
 
 ## Issue-5: WorldClock
