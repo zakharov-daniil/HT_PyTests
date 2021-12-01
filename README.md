@@ -29,5 +29,5 @@ $ python -m pytest -v test_py_fit.py
 $ coverage run -m pytest -v what_is_year_now.py
 2. Вывод директории с html файлами</br>
 $ coverage html what_is_year_now.py</br>
-Чтобы посмотреть html-результат, нужно в браузере зайти на (или открыть файл **index.html** ):
+Чтобы посмотреть html-результат, нужно в браузере зайти на (или открыть файл **index.html** ):</br>
 htmlcov/index.html
