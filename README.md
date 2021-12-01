@@ -28,3 +28,4 @@ $ python -m pytest -v test_py_fit.py
 1. Запус с командной строки</br>
 $ coverage run -m pytest -v what_is_year_now.py
 2. Вывод директории с html файлами
+$ coverage html what_is_year_now.py
