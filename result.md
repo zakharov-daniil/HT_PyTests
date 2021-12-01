@@ -161,3 +161,19 @@ main.py::test_fit_texts[text3-expected3] PASSED                                 
 
 ============================================================================== 6 passed in 0.08s ==============================================================================
 ```
+# Issue-5
+## 1. $ coverage run -m pytest -v what_is_year_now.py
+```python
+collected 3 items                                                                                                                                                             
+
+what_is_year_now.py::test_exception PASSED                                                                                                                              [ 33%]
+what_is_year_now.py::test_get_year[test_date0-2020] PASSED                                                                                                              [ 66%]
+what_is_year_now.py::test_get_year[test_date1-2019] PASSED                                                                                                              [100%]
+
+============================================================================== 3 passed in 0.36s ==============================================================================
+(base) MacBook-Pro-Daniil-2:Домашка daniilzakharov$ coverage html what_is_year_now.py
+```
+## 2. $ coverage html what_is_year_now.py
+```python
+Wrote HTML report to htmlcov/index.html
+```
