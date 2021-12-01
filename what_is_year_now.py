@@ -60,5 +60,3 @@ def test_get_year(test_date, exp_year):
         result_year = what_is_year_now()
 
     assert result_year == exp_year
-
-    
