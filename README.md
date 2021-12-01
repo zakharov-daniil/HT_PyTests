@@ -19,7 +19,7 @@ $ python -m unittest -v test_u_fit.py
 2. Запуск в pycharm
 
 ## Issue-4: Pytest
-Файлы one_hot_encoder.py с функцией fit_tramsform и test_py_fit.py с тестами </br>
+Файлы *one_hot_encoder.py* с функцией fit_tramsform и test_py_fit.py с тестами </br>
 1. Запуск с командной строки</br>
 $ python -m pytest -v test_py_fit.py
 
