@@ -17,6 +17,7 @@ def test_empty():
     (['red', 'red', 'green'], [('red', [0, 1]), ('red', [0, 1]), ('green', [1, 0])]),
     (['123'], [('123', [1])])
 ])
+
 def test_fit_texts(text, expected):
     assert fit_transform(text) == expected
 
