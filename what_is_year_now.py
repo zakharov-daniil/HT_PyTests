@@ -45,13 +45,12 @@ def test_exception():
 
     with pytest.raises(ValueError), open('exp_except.json', 'r') as exp_except_js, \
             patch.object(urllib.request, 'urlopen', return_value = exp_except_js):
-        result_year = what_is_year_now()
+        what_is_year_now()
 
 @pytest.mark.parametrize('test_date, exp_year', [
     ({'currentDateTime': '2020-11-29'}, 2020),
     ({'currentDateTime': '29.11.2019'}, 2019)
 ])
-
 def test_get_year(test_date, exp_year):
     with open('date.json', 'w') as date_js:
         json.dump(test_date, date_js)
