@@ -66,7 +66,6 @@ def decode(morse_message: str) -> str:
     ('- . ... -   ..-. --- .-.   .-.. . - - . .-.   --', 'TEST FOR LETTER M'),
     ('..-. ..- -. -. -.--   .-- --- .-. -..', 'FUNNY WORD')
 ])
-
 def test_decode(test_input, expected):
     assert decode(test_input) == expected
 
