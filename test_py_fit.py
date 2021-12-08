@@ -4,7 +4,7 @@ from one_hot_encoder import fit_transform
 
 def test_none():
     with pytest.raises(TypeError):
-        result = fit_transform()
+        fit_transform()
 
 def test_empty():
     result = fit_transform([])
@@ -17,7 +17,6 @@ def test_empty():
     (['red', 'red', 'green'], [('red', [0, 1]), ('red', [0, 1]), ('green', [1, 0])]),
     (['123'], [('123', [1])])
 ])
-
 def test_fit_texts(text, expected):
     assert fit_transform(text) == expected
 
