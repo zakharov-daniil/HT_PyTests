@@ -6,7 +6,7 @@ class TestFitTransform(unittest.TestCase):
 
     def test_none(self):
         with self.assertRaises(TypeError):
-            result = fit_transform()
+            fit_transform()
 
     def test_empty(self):
         result = fit_transform([])
